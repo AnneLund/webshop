@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nordic Chi Webshop</title>
+    <link rel="stylesheet" href="./scss/webshop.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Nordic Chi <span>Webshop</span></h1>
+      </header>
+
+      <div class="logo">
+        <img src="./assets/img/logochiny.png" alt="logo" />
+      </div>
+
+      <section class="shoppingcards">
+        <div class="card">
+          <img src="./assets/img/badesalt.jpeg" alt="badesalt" />
+          <h2>Badesalt</h2>
+          <p class="price">149 DKK</p>
+          <p>Noget tekst om det..</p>
+          <button type="button" id="butone" onclick="functionAdd()">
+            Tilføj til kurv
+          </button>
+          <button type="button" id="butone-remove" onclick="functionRemove()">
+            Fjern fra kurv
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/badesalt.jpeg" alt="badesalt" />
+          <h2>Badesalt</h2>
+          <p class="price">249 DKK</p>
+          <p>Noget tekst om det..</p>
+          <button type="button" id="buttwo" onclick="functionAdd()">
+            Tilføj til kurv
+          </button>
+          <button type="button" id="buttwo-remove" onclick="functionRemove()">
+            Fjern fra kurv
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/candle.jpeg" alt="duftlys" />
+          <h2>Duftlys</h2>
+          <p class="price">149 DKK</p>
+          <p>Noget tekst om det..</p>
+          <button type="button" id="butthree" onclick="functionAdd()">
+            Tilføj til kurv
+          </button>
+          <button type="button" id="butthree-remove" onclick="functionRemove()">
+            Fjern fra kurv
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="./assets/img/candle.jpeg" alt="duftlys" />
+          <h2>Duftlys</h2>
+          <p class="price">149 DKK</p>
+          <p>Noget tekst om det..</p>
+          <button type="button" id="butfour" onclick="functionAdd()">
+            Tilføj til kurv
+          </button>
+          <button type="button" id="butfour-remove" onclick="functionRemove()">
+            Fjern fra kurv
+          </button>
+        </div>
+      </section>
+
+      <section class="shopicon">
+        <p>i kurven: <a id="items">0</a></p>
+
+        <div class="dropdown">
+          <button id="myBtn" class="dropbtn">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <p id="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              consectetur omnis vero quas vel! Excepturi, a provident labore
+              iste veritatis doloribus recusandae voluptatibus tenetur esse
+              cumque, dolore enim molestias ab.
+            </p>
+          </div>
+        </div>
+      </section>
+      <script src="./javascript/script.js"></script>
+    </div>
+  </body>
+</html>
